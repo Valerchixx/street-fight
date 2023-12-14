@@ -11,7 +11,15 @@ export function createFighterPreview(fighter, position) {
         const fighterImage = createFighterImage(fighter);
         const fighterName = createName(fighter.name);
         const fighterAttack = createLabel('attack', fighter.attack);
-        fighterElement.append(fighterImage, fighterName, fighterAttack);
+        const fighterDefense = createLabel('defense', fighter.defense);
+        const fighterHealth = createLabel('health', fighter.health);
+        const infoWrap = createElement({ tagName: 'div', className: 'fighter-preview__info' });
+        infoWrap.append(fighterName, fighterAttack, fighterDefense, fighterHealth);
+        const imageWrap = createElement({ tagName: 'div' });
+        imageWrap.append(fighterImage);
+        const wrapper = createElement({ tagName: 'div', className: 'fighter-preview__wrap' });
+        wrapper.append(infoWrap, imageWrap);
+        fighterElement.append(wrapper);
     }
 
     return fighterElement;
