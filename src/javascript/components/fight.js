@@ -22,3 +22,8 @@ export function getBlockPower(fighter) {
     const dodgeChance = Math.random() * (2 - 1) + 1;
     return defense * dodgeChance;
 }
+
+function criticalStrike(fighter) {
+    const { attack } = fighter;
+    return attack * 2;
+}
