@@ -17,10 +17,11 @@
   align-items: center;
 }
 .fighter-preview__info {
-  width: 200px;
+  width: 300px;
 }
 
 .fighter-preview__wrap p {
+  width: 100%;
   font-size: 22px;
   color: #fff;
   font-weight: 600;
