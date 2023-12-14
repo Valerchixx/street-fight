@@ -1,5 +1,12 @@
+import { createFighterImage } from '../fighterPreview';
 import showModal from './modal';
 
 export default function showWinnerModal(fighter) {
-    // call showModal function
+    showModal({
+        title: 'We have winner!',
+        bodyElement: createFighterImage(fighter),
+        onClose: () => {
+            document.location.href = '/';
+        }
+    });
 }

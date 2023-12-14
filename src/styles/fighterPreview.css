@@ -11,3 +11,18 @@
 .fighter-preview___left {
   align-items: flex-start;
 }
+
+.fighter-preview__wrap {
+  display: flex;
+  align-items: center;
+}
+.fighter-preview__info {
+  width: 300px;
+}
+
+.fighter-preview__wrap p {
+  width: 100%;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+}

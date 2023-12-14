@@ -12,6 +12,8 @@
         "prettier/prettier": "error",
         "arrow-body-style": 0,
         "no-console": ["error", { "allow": ["warn", "error"] }],
+        "class-methods-use-this": "off",
+        "no-use-before-define":"off",
         "no-underscore-dangle": 0,
         "no-useless-catch": 0
     },
