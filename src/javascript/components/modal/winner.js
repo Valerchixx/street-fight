@@ -1,5 +1,11 @@
 import showModal from './modal';
 
 export default function showWinnerModal(fighter) {
-    // call showModal function
+    showModal({
+        title: 'We have winner!',
+        bodyElement: fighter.name,
+        onClose: () => {
+            document.location.href = '/';
+        }
+    });
 }
